@@ -1,0 +1,16 @@
+# Large binary outputs
+outputs/**/*.h5ad
+outputs/**/*_all.csv
+outputs/**/*.pdf
+
+# Raw TCGA data
+reference_data/tcga_skcm/
+
+# Paper supplementary — copyright
+reference_data/NIHMS1560729-supplement-SI-3_ClusterDE_Markers.xlsx
+
+# Python
+__pycache__/
+*.pyc
+.DS_Store
+.idea/

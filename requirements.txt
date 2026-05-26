@@ -1,0 +1,17 @@
+# Core scRNA-seq analysis
+scanpy==1.11.5
+anndata== 0.12.7        # installed as scanpy dependency — pin for AnnData compatibility
+
+# Data handling
+pandas==2.3.3
+numpy==2.3.5
+scipy==1.16.3
+
+# Visualisation
+matplotlib==3.10.8
+
+# Survival analysis (TCGA Kaplan-Meier)
+lifelines==0.30.3
+
+# Excel file reading — PanglaoDB + paper supplementary table
+openpyxl==3.2.0b1

@@ -1,0 +1,10 @@
+cell_type,paper_label,your_top10_n,paper_total_sig,overlap_n,overlap_genes
+M1_Macrophage,M1 Macrophage,10,192,5,"C1qa, C1qb, C1qc, Cd300e, Slamf9"
+CD8_T,Mki67- CD8+ T cell,10,178,8,"Cd3d, Cd3g, Cd8a, Cd8b1, Cxcr6, Gzmk, Nkg7, Pdcd1"
+Monocyte,Monocyte,10,96,5,"Ccr2, Gm9733, Il1b, Ly6i, Plac8"
+MDSC,MDSC,10,142,6,"Arg1, Cxcl3, Egln3, Hilpda, Mmp12, Rhov"
+pDC,Plasmacytoid DC,10,257,9,"Atp2a1, Ccr9, D13Ertd608e, Klk1, Klk1b27, Ly6d, Siglech, Smim5, Upb1"
+NK,NK cell,10,150,7,"Gzma, Klra4, Klra7, Klrb1a, Klrb1c, Klrb1f, Ncr1"
+CD103_cDC,CD103+ cDC,10,113,6,"A530099J19Rik, Ffar4, Gcsam, Itgae, Mycl, Xcr1"
+MoDC,MoDC,20,52,7,"Ear2, Fcrls, Fn1, H2-Ab1, Lyz1, Mgl2, Retnla"
+Migratory_cDC,Migratory cDC,10,272,6,"Ccl22, Ccr7, Fscn1, Gm13546, Il4i1, Nudt17"

@@ -1,0 +1,57 @@
+TCGA SKCM Data Download Instructions
+=====================================
+
+The TCGA Skin Cutaneous Melanoma (SKCM) data used in this project
+is publicly available from cBioPortal and must be downloaded
+separately before running tcga_isg_survival.py.
+
+Dataset
+-------
+Study   : Skin Cutaneous Melanoma (TCGA, Firehose Legacy)
+ID      : skcm_tcga
+Source  : https://www.cbioportal.org/study/summary?id=skcm_tcga
+
+Files Required
+--------------
+Place both files in this directory (tcga_skcm/) before running:
+
+1. data_mrna_seq_v2_rsem.txt
+   - RNA-seq V2 RSEM expression matrix
+   - 20,514 genes x 472 samples
+   - Size: ~83 MB
+
+2. skcm_tcga_clinical_data.tsv
+   - Clinical data including overall survival
+   - 480 patients, 90 variables
+
+Download Steps
+--------------
+1. Go to https://www.cbioportal.org/study/summary?id=skcm_tcga
+2. Click the Download tab at the top of the page
+3. Download data_mrna_seq_v2_rsem.txt (expression matrix)
+4. Click the Clinical Data tab
+5. Download the clinical data as TSV
+   Save as: skcm_tcga_clinical_data.tsv
+
+After Download
+--------------
+Verify files are in place:
+
+  tcga_skcm/
+  ├── DOWNLOAD_INSTRUCTIONS.txt   (this file)
+  ├── data_mrna_seq_v2_rsem.txt
+  └── skcm_tcga_clinical_data.tsv
+
+Then run:
+  python tcga_isg_survival.py
+
+Note on ISG15 Gene Alias
+------------------------
+ISG15 is stored as G1P2 in the TCGA RSEM matrix.
+This is handled automatically in tcga_isg_survival.py.
+Reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC8834048/
+
+Data Citation
+-------------
+TCGA Skin Cutaneous Melanoma (SKCM) dataset accessed via cBioPortal:
+https://www.cbioportal.org/study/summary?id=skcm_tcga

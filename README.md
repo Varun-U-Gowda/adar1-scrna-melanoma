@@ -48,12 +48,12 @@ This project asks:
 
 ### Immune Composition Shift — ADAR KO vs Control
 ![Composition](outputs/GSE110746/celltype_composition.png)
-    
-### ISG Signature Predicts Survival — TCGA SKCM
-![Survival](outputs/GSE110746/tcga_isg_km_survival.png)
 
 ### Myeloid Cell-State Connectivity — PAGA Trajectory
 ![PAGA](outputs/GSE110746/paga_paga.png)
+
+### ISG Signature Predicts Survival — TCGA SKCM
+![Survival](outputs/GSE110746/tcga_isg_km_survival.png)
 
 ---
 
@@ -68,7 +68,7 @@ QC → clustering → annotation    →    Kaplan-Meier survival analysis
 Condition DE (ADAR KO vs Control)    Log-rank test
         ↓                                      ↓
 ISG upregulation in                  ISG-high patients survive
-Monocytes, pDC, CD8 T          →     22.8 months longer (p=1.53×10⁻⁷)
+Monocytes, pDC, CD8 T          →     22.2 months longer (p=6.40×10⁻⁶)
 Monocyte = central myeloid hub
 ```
 

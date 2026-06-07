@@ -69,9 +69,9 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # -- 0. Paths ------------------------------------------------------------------
-EXPR_FILE = "reference_data/tcga_skcm/data_mrna_seq_v2_rsem.txt"
-CLINICAL_FILE = "reference_data/tcga_skcm/skcm_tcga_clinical_data.tsv"
-OUT_DIR = "outputs/GSE110746"
+EXPR_FILE = "/Users/varunugowda/Documents/My_Documents/Github_uploads/Single_cell/tcga_skcm/data_mrna_seq_v2_rsem.txt"
+CLINICAL_FILE = "/Users/varunugowda/Documents/My_Documents/Github_uploads/Single_cell/tcga_skcm/skcm_tcga_clinical_data.tsv"
+OUT_DIR = "outputs1/GSE110746"
 
 # TCGA stores ISG15 as G1P2 in this RSEM matrix
 ISG_GENES_TCGA = {

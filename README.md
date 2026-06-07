@@ -37,6 +37,7 @@ This project asks:
 | MDSC proportion | 10% ADAR KO vs 18% Control |
 | TCGA SKCM survival | ISG-high: 48.8 months vs ISG-low: 26.6 months |
 | Log-rank p-value | 6.40 × 10⁻⁶ (n=460 patients) |
+| Myeloid cell-state connectivity | PAGA trajectory identifies Monocyte as central hub connecting MDSC, MoDC, M1_Macrophage, and pDC — consistent with IFN signal propagation through the myeloid compartment |
 
 ---
 
@@ -50,6 +51,9 @@ This project asks:
     
 ### ISG Signature Predicts Survival — TCGA SKCM
 ![Survival](outputs/GSE110746/tcga_isg_km_survival.png)
+
+### Myeloid Cell-State Connectivity — PAGA Trajectory
+![PAGA](outputs/GSE110746/paga_paga.png)
 
 ---
 
@@ -65,6 +69,7 @@ Condition DE (ADAR KO vs Control)    Log-rank test
         ↓                                      ↓
 ISG upregulation in                  ISG-high patients survive
 Monocytes, pDC, CD8 T          →     22.8 months longer (p=1.53×10⁻⁷)
+Monocyte = central myeloid hub
 ```
 
 ---
@@ -115,10 +120,9 @@ To reproduce exactly:
 
 ```bash
 conda env create -f environment.yml
-conda activate spatial
+conda activate adar1-scrna
 ```
 
-Random seeds are fixed at 42 throughout the pipeline.
 Results may differ on non-Apple-Silicon hardware due to
 platform-level numerical precision differences in UMAP
 and Leiden clustering — this is a known limitation of

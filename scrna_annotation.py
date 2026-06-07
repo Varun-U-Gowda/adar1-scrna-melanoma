@@ -335,3 +335,19 @@ if os.path.exists(paper_path):
 
 else:
     print(f"\n[SKIP] Supplementary file not found at {paper_path}")
+
+# PAGA — connectivity between cell types
+sc.tl.paga(adata_immune, groups="cell_type")
+sc.pl.paga(adata_immune, save="_paga.png")
+
+# Diffusion pseudotime — root at Monocyte
+import numpy as np
+adata_immune.uns["iroot"] = np.where(
+    adata_immune.obs["cell_type"] == "Monocyte"
+)[0][0]
+sc.tl.dpt(adata_immune)
+sc.pl.umap(
+    adata_immune,
+    color=["dpt_pseudotime", "condition"],
+    save="_pseudotime.png"
+)

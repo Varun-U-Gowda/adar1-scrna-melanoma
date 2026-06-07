@@ -33,7 +33,7 @@ Key implementation notes:
 
 Command:
   python scrna_pipeline.py \
-    --input data/GSE110746 \
+    --input /Users/varunugowda/Documents/My_Documents/Github_uploads/Single_cell/data/GSE110746 \
     --input_type 10x_mtx_v2 \
     --outdir outputs/GSE110746
 
